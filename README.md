@@ -25,6 +25,48 @@
         }
     };
 ```
+## 目录结构
+框架默认配置属性`rootDir`默认为根目录下`web`，pages下是页面组件入口，比如`list`页面，vue主入口文件为`list/index.js`，页面组件为`list/App.vue`
+```
+└── web
+    └── pages
+        └── list
+            ├── App.vue
+            ├── index.js
+```
+
+## 页面组件(App.vue)
+```vue
+<template>
+ <!--vue2.0版本APP.vue必须要设置根元素-->
+  <div id ='app'>
+    <h1>{{msg}}</h1>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'app',
+    data () {
+		return {
+			'msg' : 'hi vue ssr!'
+		}
+    },
+  }
+</script>
+```
+
+## 页面主入口文件(index.js)
+```js
+import App from './App.vue';
+export default {
+    App, // 必须导出App
+    Router, //如使用vue-router 导出路由配置对象
+    Store, //如使用vuex 导出store对象
+};
+```
+`Pages`下按照文件夹名称定义vue页面组件，每一个页面组件必须包含`inde.js`主入口文件,文件必须导出组件`App`。如果使用`vue-router`,则将路由配置导出为``Router``对象；当使用`vuex`时，则将初始化配置导出为`Store`。
+
 
 ## 插件使用
 ```ts
@@ -40,7 +82,7 @@ export default class Index extends BaseController {
 
 ```
 
-## **[开发使用文档](https://umajs.gitee.io/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93/vue-ssr.html)**
+## **[官网使用文档](https://umajs.gitee.io/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93/vue-ssr.html)**
 
 ## 案例
 - [css-module](https://github.com/dazjean/Srejs/tree/mian/example/uma--vue-css-module)
