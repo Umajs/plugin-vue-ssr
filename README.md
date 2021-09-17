@@ -48,9 +48,9 @@
   export default {
     name: 'app',
     data () {
-		return {
-			'msg' : 'hi vue ssr!'
-		}
+	return {
+		'msg' : 'hi vue ssr!'
+	}
     },
   }
 </script>
@@ -85,8 +85,9 @@ export default class Index extends BaseController {
 ## **[官网使用文档](https://umajs.gitee.io/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93/vue-ssr.html)**
 
 ## 案例
-- [css-module](https://github.com/dazjean/Srejs/tree/mian/example/uma--vue-css-module)
-- [vuex](https://github.com/dazjean/Srejs/tree/mian/example/uma-vue-vuex)
-- [vue-router](https://github.com/dazjean/Srejs/tree/mian/example/uma-vue-router)
-- [elementUI](https://github.com/dazjean/Srejs/tree/mian/example/uma-elementUI)
-- [ant-design-vue](https://github.com/dazjean/Srejs/tree/mian/example/uma-ant-design-vue)
+- [css-module](https://github.com/Umajs/umajs-vue-ssr/tree/main/web/pages/css)
+- [vuex](https://github.com/Umajs/umajs-vue-ssr/tree/main/web/pages/vuex)
+- [vue-router](https://github.com/Umajs/umajs-vue-ssr/tree/main/web/pages/router)
+- [elementUI](https://github.com/Umajs/umajs-vue-ssr/tree/main/web/pages/element)
+- [ant-design-vue](https://github.com/Umajs/umajs-vue-ssr/tree/main/web/pages/andv)
+
