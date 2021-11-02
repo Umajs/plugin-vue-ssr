@@ -1,6 +1,6 @@
 {
   "name": "@umajs/plugin-vue-ssr",
-  "version": "1.2.8",
+  "version": "2.0.0",
   "description": "In umajs, Vue is used to develop the plug-in of spa and MPa, which supports server-side rendering and client-side rendering",
   "author": "zunyi_zjj@163.com",
   "keywords": [
@@ -24,7 +24,7 @@
     "index.d.ts"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org",
+    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "scripts": {
@@ -49,8 +49,8 @@
     "@types/shelljs": "^0.8.7",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
-    "@umajs/core": "^1.1.2",
-    "@umajs/router": "^1.1.2",
+    "@umajs/core": "^2.0.1",
+    "@umajs/router": "^2.0.1",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
